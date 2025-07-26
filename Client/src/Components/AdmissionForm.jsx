@@ -81,7 +81,7 @@ const StudentAdmissionForm = () => {
     const fetchInitialData = async () => {
       try {
         // Fetch classes with sections
-        const classesResponse = await axios.get('http://localhost:3000/api/classes/with-sections');
+        const classesResponse = await axios.get('https://school-project-test-backend.onrender.com/api/classes/with-sections');
         setClassesWithSections(classesResponse.data);
         
         // Simulate other loading
