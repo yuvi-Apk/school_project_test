@@ -26,7 +26,7 @@ const StudentSearchPage = () => {
   useEffect(() => {
     const fetchClassSectionData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/classes/with-sections");
+        const response = await fetch("https://school-project-test-backend.onrender.com/api/classes/with-sections");
         const data = await response.json();
         setClasses(data);
       } catch (error) {
