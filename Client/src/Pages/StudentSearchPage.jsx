@@ -48,7 +48,7 @@ const StudentSearchPage = () => {
 
   const handleSearch = async () => {
   try {
-    const res = await fetch(`http://localhost:3000/api/students/`);
+    const res = await fetch(`https://school-project-test-backend.onrender.com/api/students/`);
     const data = await res.json();
     setStudents(data);
     console.log(data); // Add this to check the actual data structure
