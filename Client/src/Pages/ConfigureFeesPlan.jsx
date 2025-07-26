@@ -67,7 +67,7 @@ const ConfigureFeesPlan = () => {
 
   const handleUpdate = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/api/fees/plan", {
+      const response = await axios.post("https://school-project-test-backend.onrender.com/api/fees/plan", {
         feesHeading,
         value: feesValue,
         classes: selectedClasses,
