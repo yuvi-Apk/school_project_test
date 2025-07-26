@@ -17,7 +17,7 @@ const FeesRegister = () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await axios.get("http://localhost:3000/api/fees/apply", {
+      const res = await axios.get("https://school-project-test-backend.onrender.com/api/fees/apply", {
         params: { fromDate, toDate, userWise }
       });
       setData(res.data);
