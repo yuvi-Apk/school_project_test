@@ -21,7 +21,7 @@ const ClassManager = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/api/classes/", {
+      const response = await fetch("https://school-project-test-backend.onrender.com/api/classes/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
