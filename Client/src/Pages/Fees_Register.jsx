@@ -13,7 +13,7 @@ const FeesRegister = () => {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/details");
+      const res = await axios.get("https://school-project-test-backend.onrender.com/api/details");
       setData(res.data);
     } catch (error) {
       console.error("Error fetching data:", error);
